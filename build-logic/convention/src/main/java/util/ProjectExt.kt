@@ -16,6 +16,9 @@ fun DependencyHandler.implementation(dependencyNotation: Any): Dependency? =
 fun DependencyHandler.androidTestImplementation(dependencyNotation: Any): Dependency? =
     add("androidTestImplementation", dependencyNotation)
 
+fun DependencyHandler.testImplementation(dependencyNotation: Any): Dependency? =
+    add("testImplementation", dependencyNotation)
+
 fun DependencyHandler.debugImplementation(dependencyNotation: Any): Dependency? =
     add("debugImplementation", dependencyNotation)
 
