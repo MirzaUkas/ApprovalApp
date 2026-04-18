@@ -21,6 +21,7 @@ kotlinxSerializationJson = "1.11.0"
 timber = "5.0.1"
 coroutinesTest = "1.10.1"
 mockk = "1.13.17"
+uiAutomator = "2.3.0"
 
 [libraries]
 # Android Libs
@@ -59,6 +60,7 @@ timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "tim
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutinesTest" }
 mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
+androidx-test-uiautomator = { group = "androidx.test.uiautomator", name = "uiautomator", version.ref = "uiAutomator" }
 
 # Dependencies of the included build-logic gradle files
 android-gradle = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }

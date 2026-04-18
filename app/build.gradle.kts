@@ -29,4 +29,8 @@ dependencies {
     implementation(projects.core.data)
     implementation(projects.core.navigation)
     implementation(projects.feature.request)
+
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(libs.androidx.test.uiautomator)
 }

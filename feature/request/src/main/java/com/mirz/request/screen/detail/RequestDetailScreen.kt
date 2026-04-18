@@ -145,7 +145,7 @@ fun RequestDetailScreen(
                     enabled = !uiState.requestState.isLoading(),
                     modifier = Modifier.height(52.dp),
                 ) {
-                    Text(text = "Reject", fontSize = 14.sp, fontWeight = FontWeight.Medium)
+                    Text(text = stringResource(R.string.reject), fontSize = 14.sp, fontWeight = FontWeight.Medium)
                 }
 
                 AppSlideButton(
