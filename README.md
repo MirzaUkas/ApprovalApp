@@ -4,13 +4,27 @@ An Android application for managing approval requests, built with a modular, sca
 
 ## Preview
 
+### Portrait
+
 | Light Mode | Dark Mode |
 |---|---|
 | ![Light Mode](assets/LightMode.png) | ![Dark Mode](assets/DarkMode.png) |
 
-### Approve / Reject Demo
+### Landscape
+
+| Home | Detail |
+|---|---|
+| ![Landscape Home](assets/LandscapeHome.png) | ![Landscape Detail](assets/LandscapeDetail.png) |
+
+### Demo
+
+**Approve / Reject**
 
 https://github.com/user-attachments/assets/ApproveReject.mp4
+
+**Multiple Screen Orientations**
+
+https://github.com/user-attachments/assets/MultipleScreenOrientation.mp4
 
 ---
 
