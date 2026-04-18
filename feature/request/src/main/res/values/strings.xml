@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="create_new_request">Create new request</string>
+    <string name="via_logo">VIA logo</string>
+    <string name="new_request">New Request</string>
+    <string name="home">Home</string>
+</resources>
