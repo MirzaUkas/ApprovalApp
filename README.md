@@ -187,6 +187,10 @@ Tests live in `feature/request/src/test/` and cover `RequestDetailViewModel`.
 | `Success rejectRequest` | `processState` transitions Loading → Success with correct entity |
 | `Error rejectRequest` | `processState` reaches Failed with correct error message |
 
+### Report
+
+![Unit Test Report](assets/UnitTestReport.png)
+
 ### Running Tests
 
 ```bash
@@ -222,6 +226,28 @@ private val LightColorScheme = lightColorScheme(
 Dynamic color (Material You) is intentionally disabled (`dynamicColor = false`) to preserve the app's branded navy palette across all devices.
 
 Toggle dark mode via **System Settings → Display → Dark theme**.
+
+### UI Automation Test (UI Automator)
+
+A single end-to-end instrumentation test lives in `app/src/androidTest/java/com/mirz/approval/RequestFlowUiTest.kt`.
+
+**Scenario:** Tap *New Request* → detail screen loads → tap *Reject* → red snackbar appears on the landing screen.
+
+**Snackbar matching** uses a case-insensitive regex so both outcomes pass:
+- `"Request rejected successfully."` → red (contains *reject*)
+- `"Rejection failed: unable to reject the request."` → red (contains *reject*)
+
+```bash
+# Install the app first, then run instrumented tests
+./gradlew :app:installDebug
+./gradlew :app:connectedAndroidTest
+```
+
+#### Report
+
+![UI Test Report](assets/UiTestReport.png)
+
+---
 
 ### Landscape Orientation
 
