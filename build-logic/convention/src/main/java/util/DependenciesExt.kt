@@ -20,6 +20,14 @@ fun Project.composeDependencies() {
     }
 }
 
+fun Project.testDependencies() {
+    dependencies {
+        testImplementation(libs.junit.get())
+        testImplementation(libs.kotlinx.coroutines.test.get())
+        testImplementation(libs.mockk.get())
+    }
+}
+
 fun Project.dataDependencies() {
     dependencies {
         implementation(project(coreModules[1]))

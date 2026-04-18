@@ -7,6 +7,7 @@ import util.Constants.coreModules
 import util.alias
 import util.implementation
 import util.libs
+import util.testDependencies
 
 class FeatureModulePlugin : Plugin<Project> {
     override fun apply(target: Project) {
@@ -22,6 +23,7 @@ class FeatureModulePlugin : Plugin<Project> {
                     implementation(project(module))
                 }
             }
+            testDependencies()
         }
     }
 }

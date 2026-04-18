@@ -19,6 +19,8 @@ interceptor = "5.1.0"
 retrofit = "3.0.0"
 kotlinxSerializationJson = "1.11.0"
 timber = "5.0.1"
+coroutinesTest = "1.10.1"
+mockk = "1.13.17"
 
 [libraries]
 # Android Libs
@@ -55,6 +57,8 @@ timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "tim
 
 # Tests
 junit = { group = "junit", name = "junit", version.ref = "junit" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutinesTest" }
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
 
 # Dependencies of the included build-logic gradle files
 android-gradle = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
