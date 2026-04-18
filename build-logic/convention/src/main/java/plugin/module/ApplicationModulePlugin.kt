@@ -1,15 +1,15 @@
 package plugin.module
 
 import com.android.build.api.dsl.ApplicationExtension
-import util.Constants.MAX_SDK_VERSION
-import util.Constants.resourceExcludes
-import util.alias
 import config.androidConfiguration
 import config.composeConfiguration
-import util.libs
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
+import util.Constants.MAX_SDK_VERSION
+import util.Constants.resourceExcludes
+import util.alias
+import util.libs
 
 class ApplicationModulePlugin : Plugin<Project> {
     override fun apply(target: Project) {

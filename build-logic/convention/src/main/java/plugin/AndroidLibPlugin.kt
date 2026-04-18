@@ -6,7 +6,6 @@ import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
 import util.Constants
-import util.Constants.MAX_SDK_VERSION
 import util.alias
 import util.libs
 

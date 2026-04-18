@@ -1,9 +1,9 @@
 package plugin.module
 
-import util.alias
-import util.libs
 import org.gradle.api.Plugin
 import org.gradle.api.Project
+import util.alias
+import util.libs
 
 class CommonModulePlugin : Plugin<Project> {
     override fun apply(target: Project) {
