@@ -13,19 +13,21 @@ import androidx.compose.runtime.ReadOnlyComposable
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
+    primary = NavyLight,
+    secondary = NavyMedium,
     tertiary = Pink80,
-    background = BackgroundDark,
-    surface = SurfaceDark
+    background = NavyDark,
+    surface = SurfaceDark,
+    onPrimary = TextOnDark
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
+    primary = NavyDark,
+    secondary = NavyMedium,
     tertiary = Pink40,
     background = BackgroundLight,
-    surface = SurfaceLight
+    surface = SurfaceLight,
+    onPrimary = TextOnDark
 )
 
 object AppTheme {

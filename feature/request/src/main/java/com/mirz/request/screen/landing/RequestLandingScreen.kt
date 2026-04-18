@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.MaterialTheme.colorScheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Snackbar
 import androidx.compose.material3.SnackbarHost
@@ -33,7 +34,6 @@ import com.mirz.approval.feature.request.R
 import com.mirz.common.base.BaseScreen
 import com.mirz.common.ui.theme.ErrorContainer
 import com.mirz.common.ui.theme.ErrorContent
-import com.mirz.common.ui.theme.NavyDark
 import com.mirz.common.ui.theme.SuccessContainer
 import com.mirz.common.ui.theme.SuccessContent
 import com.mirz.data.model.entity.ProcessEntity
@@ -85,8 +85,8 @@ internal fun RequestLandingScreen(
                 verticalArrangement = Arrangement.SpaceEvenly
             ) {
                 Text(
-                    text = stringResource(R.string.new_request),
-                    color = NavyDark,
+                    text = stringResource(R.string.home),
+                    color = colorScheme.primary,
                     fontSize = 26.sp,
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier.padding(top = 26.dp)
@@ -108,12 +108,13 @@ internal fun RequestLandingScreen(
                         .fillMaxWidth()
                         .height(52.dp),
                     shape = RoundedCornerShape(12.dp),
-                    colors = ButtonDefaults.buttonColors(containerColor = NavyDark)
+                    colors = ButtonDefaults.buttonColors(containerColor = colorScheme.primary)
                 ) {
                     Text(
-                        text = stringResource(R.string.home),
+                        text = stringResource(R.string.new_request),
                         fontSize = 15.sp,
                         fontWeight = FontWeight.SemiBold,
+                        color = colorScheme.onPrimary
                     )
                 }
 

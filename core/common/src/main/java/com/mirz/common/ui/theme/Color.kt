@@ -8,6 +8,8 @@ val Pink80 = Color(0xFFEFB8C8)
 
 val NavyDark = Color(0xFF1A3544)
 val NavyMedium = Color(0xFF1D3D50)
+
+val NavyLight = Color(0xFF2A5F7C)
 val TealMint = Color(0xFF4BA8A0)
 val TealLight = Color(0xFF6EC6BF)
 val LogoCircleBg = Color(0xFFF0F2F5)
