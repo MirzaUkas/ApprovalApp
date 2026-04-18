@@ -37,7 +37,7 @@ fun BaseScreen(
     topBarArgs: TopBarArgs = TopBarArgs(),
     centerTopBar: Boolean = false,
     clipToTopBar: Boolean = false,
-    lockOrientation: Boolean = true,
+    lockOrientation: Boolean = false,
     showDefaultTopBar: Boolean = true,
     systemBarsPadding: Boolean = true,
     content: @Composable () -> Unit

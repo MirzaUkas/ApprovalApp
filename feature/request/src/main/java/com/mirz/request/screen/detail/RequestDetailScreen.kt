@@ -85,7 +85,7 @@ fun RequestDetailScreen(
                 modifier = Modifier
                     .fillMaxWidth()
                     .background(NavyDark)
-                    .padding(horizontal = 24.dp, vertical = 48.dp),
+                    .padding(all = 24.dp),
                 contentAlignment = Alignment.BottomStart,
             ) {
                 Text(
