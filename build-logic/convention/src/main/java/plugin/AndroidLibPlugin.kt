@@ -15,7 +15,6 @@ class AndroidLibPlugin : Plugin<Project> {
         with(target) {
             with(pluginManager) {
                 alias(libs.plugins.android.library)
-                alias(libs.plugins.kotlin.android)
                 alias(libs.plugins.kotlin.compose)
                 alias(libs.plugins.convention.hilt)
             }

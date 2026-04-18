@@ -16,7 +16,7 @@ object Constants {
         "-XXLanguage:+PropertyParamAnnotationDefaultTargetMode"
     )
     const val BASE_NAME = "com.mirz.approval"
-    const val MIN_SDK_VERSION = 26
+    const val MIN_SDK_VERSION = 24
     const val MAX_SDK_VERSION = 36
     const val KSP = "ksp"
 

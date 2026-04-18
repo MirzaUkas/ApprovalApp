@@ -13,6 +13,7 @@ fun Project.composeDependencies() {
         implementation(libs.androidx.appcompat.get())
         implementation(libs.androidx.compose.material3)
         implementation(libs.androidx.compose.material3.adaptive.navigation.suite.get())
+        implementation(libs.androidx.compose.material.icons.core.get())
         implementation(libs.androidx.compose.ui.tooling.preview.get())
         implementation(libs.androidx.core.ktx.get())
         implementation(libs.timber.get())
@@ -25,6 +26,7 @@ fun Project.dataDependencies() {
         implementation(libs.okhttp.interceptor.get())
         implementation(libs.retrofit.lib.get())
         implementation(libs.retrofit.converter.get())
+        implementation(libs.kotlinx.serialization.json.get())
         implementation(libs.timber.get())
     }
 }
