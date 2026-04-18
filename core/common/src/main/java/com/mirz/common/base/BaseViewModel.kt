@@ -8,7 +8,8 @@ import com.mirz.common.utils.state.ApiState.Loading
 import com.mirz.common.utils.state.ApiState.Success
 import com.mirz.common.utils.state.UiState
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.Dispatchers.IO
+import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
@@ -20,6 +21,9 @@ import javax.inject.Inject
 @HiltViewModel
 open class BaseViewModel @Inject constructor() : ViewModel() {
     private var apiJob: Job? = null
+
+    // Overrideable in tests to replace Dispatchers.IO with a TestDispatcher
+    var ioDispatcher: CoroutineDispatcher = Dispatchers.IO
 
     /**
      * Collects API responses as UI states and updates the UI state accordingly.
@@ -33,7 +37,7 @@ open class BaseViewModel @Inject constructor() : ViewModel() {
         updateState: (UiState<T>) -> Unit
     ) {
         apiJob?.cancel()
-        apiJob = viewModelScope.launch(IO) {
+        apiJob = viewModelScope.launch(ioDispatcher) {
             response.map { apiState ->
                 when (apiState) {
                     is Loading -> UiState.Loading
