@@ -16,10 +16,10 @@ import retrofit2.converter.gson.GsonConverterFactory
 @Module
 @InstallIn(SingletonComponent::class)
 class DataModule {
-
     @Provides
     fun provideRepository(apiService: ApiService): RequestRepository = RequestRepositoryImpl(apiService)
 
+    // These Retrofit and OkHttp will be used in future
     @Provides
     fun provideApiService(retrofit: Retrofit): ApiService = retrofit.create(ApiService::class.java)
 

@@ -31,11 +31,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.onGloballyPositioned
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.mirz.approval.core.common.R
 import com.mirz.common.ui.theme.AppTheme
 import com.mirz.common.ui.theme.NavyDark
 import com.mirz.common.ui.theme.TealLight
@@ -86,7 +88,7 @@ fun AppSlideButton(
     ) {
         // Track label
         Text(
-            text = if (isApproved) "Approved" else "Slide to approve",
+            text = if (isApproved) stringResource(R.string.approved) else stringResource(R.string.slide_to_approve),
             modifier = Modifier.align(Alignment.Center),
             color = Color.White.copy(alpha = if (isApproved) 1f else 0.85f),
             fontSize = 15.sp,
