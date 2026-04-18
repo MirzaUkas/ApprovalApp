@@ -11,6 +11,8 @@ class DataModulePlugin : Plugin<Project> {
         with(target) {
             with(pluginManager) {
                 alias(libs.plugins.convention.android.library)
+                alias(libs.plugins.kotlin.serialization)
+                alias(libs.plugins.kotlin.parcelize)
             }
             dataDependencies()
         }

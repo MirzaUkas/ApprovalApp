@@ -8,8 +8,8 @@ class RequestRepositoryImpl @Inject constructor(
     private val apiService: ApiService
 ) : RequestRepository, BaseRepository() {
 
-    override fun getRequest() = collectApiResult(
-        fetchApi = { apiService.getRequestData() },
+    override fun getRequest(id: Int) = collectApiResult(
+        fetchApi = { apiService.getRequestData(id) },
         transformData = { it.mapToEntity() }
     )
 

@@ -5,10 +5,10 @@ import com.mirz.data.model.response.RequestDataResponse
 import kotlinx.coroutines.delay
 
 interface ApiService {
-    suspend fun getRequestData(): RequestDataResponse {
+    suspend fun getRequestData(id: Int): RequestDataResponse {
         delay(1_500)
         return RequestDataResponse(
-            id = 1,
+            id = id,
             title = "Heading 1",
             desc = "Lorem ipsum dolor sit amet consectetur. Arcu tincidunt vitae cras amet. " +
                     "Blandit id sed et est gravida. Eu sapien amet et volutpat ultrices sed. " +

@@ -36,7 +36,7 @@ object AppTheme {
 }
 
 @Composable
-fun StarterTheme(
+fun AppTheme(
     typography: Typography = AppTheme.typography,
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+

@@ -36,8 +36,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.mirz.common.ui.theme.AppTheme
 import com.mirz.common.ui.theme.NavyDark
-import com.mirz.common.ui.theme.StarterTheme
 import com.mirz.common.ui.theme.TealLight
 import com.mirz.common.ui.theme.TealMint
 import kotlin.math.roundToInt
@@ -136,7 +136,7 @@ fun AppSlideButton(
 @Preview(showBackground = true)
 @Composable
 private fun AppSlideButtonPreview() {
-    StarterTheme {
+    AppTheme {
         AppSlideButton(
             onApproved = {},
             modifier = Modifier.padding(16.dp),
