@@ -5,7 +5,7 @@ plugins {
 android {
     defaultConfig {
         applicationId = "com.mirz.approval"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -22,4 +22,11 @@ android {
             )
         }
     }
+}
+
+dependencies {
+    implementation(projects.core.common)
+    implementation(projects.core.data)
+    implementation(projects.core.navigation)
+    implementation(projects.feature.request)
 }

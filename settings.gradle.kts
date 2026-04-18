@@ -23,5 +23,11 @@ dependencyResolutionManagement {
     }
 }
 
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 rootProject.name = "ApprovalApp"
 include(":app")
+include(":core:common")
+include(":core:data")
+include(":core:navigation")
+include(":feature:request")
